@@ -223,7 +223,9 @@ button,input,select,textarea{font:inherit;color:inherit}
 .case-hero{background:var(--red);color:var(--black);padding:calc(var(--header) + var(--blk)) 0 0}
 .back{display:inline-flex;gap:var(--s2);font:700 12px/1 var(--f-text);letter-spacing:.16em;text-transform:uppercase;text-decoration:none;margin-bottom:var(--blk)}
 .back:hover{text-decoration:underline}
-.case-title{font:900 clamp(42px,9vw,140px)/.86 var(--f-display);letter-spacing:-.05em;text-transform:uppercase;overflow-wrap:anywhere}
+/* размер заголовка считается от ширины контейнера: самое длинное слово («ВЫСТУПЛЕНИЕ») всегда помещается целиком */
+.case-hero .wrap{container-type:inline-size}
+.case-title{font:900 min(140px,10cqi)/.86 var(--f-display);letter-spacing:-.05em;text-transform:uppercase;overflow-wrap:normal;hyphens:none}
 .case-facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:var(--s4);margin-top:var(--blk);border-top:2px solid var(--black);padding:var(--s4) 0 var(--blk)}
 .case-facts dt{font:700 11px/1.5 var(--f-text);letter-spacing:.16em;text-transform:uppercase;margin-bottom:var(--s2)}
 .case-facts dd{font:800 16px/1.5 var(--f-text)}
