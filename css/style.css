@@ -269,6 +269,10 @@ button,input,select,textarea{font:inherit;color:inherit}
 .chapter .body ul{list-style:none;display:grid;gap:var(--s3)}
 .chapter .body li{padding-left:var(--s6);position:relative}
 .chapter .body li::before{content:"";position:absolute;left:0;top:.5em;width:16px;height:16px;background:var(--red);clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%)}
+.moodboard{margin:var(--blk) auto 0;max-width:720px}
+.moodboard img{width:100%;height:auto;display:block}
+.moodboard figcaption{display:flex;gap:var(--s4);align-items:baseline;margin-top:var(--s4);font:700 13px/1.5 var(--f-text);letter-spacing:.16em;text-transform:uppercase}
+.moodboard figcaption span{font:900 14px/1 var(--f-display);color:var(--red)}
 .todo{background:rgba(184,29,35,.12);box-shadow:inset 4px 0 var(--red);padding:var(--s1) var(--s2)}
 @media (max-width:760px){.chapter{grid-template-columns:1fr}}
 
